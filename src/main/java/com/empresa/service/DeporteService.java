@@ -2,10 +2,10 @@ package com.empresa.service;
 
 import java.util.List;
 
-import com.empresa.entity.Deporte;
+import com.empresa.entity.Usuario;
 
 public interface DeporteService {
 
-	public List<Deporte> listaDeporte();
+	public List<Usuario> listaDeporte();
 
 }

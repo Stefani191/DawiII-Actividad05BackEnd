@@ -24,7 +24,7 @@ public class Modalidad {
 
 	@ManyToOne
 	@JoinColumn(name = "idDeporte")
-	private Deporte deporte;
+	private Usuario deporte;
 
 	public int getIdModalidad() {
 		return idModalidad;
@@ -82,11 +82,11 @@ public class Modalidad {
 		this.sede = sede;
 	}
 
-	public Deporte getDeporte() {
+	public Usuario getDeporte() {
 		return deporte;
 	}
 
-	public void setDeporte(Deporte deporte) {
+	public void setDeporte(Usuario deporte) {
 		this.deporte = deporte;
 	}
 

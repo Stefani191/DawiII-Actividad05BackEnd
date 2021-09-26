@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.empresa.entity.Alumno;
+import com.empresa.entity.Ciclo;
 import com.empresa.repository.AlumnoRepository;
 
 @Service
@@ -15,12 +15,12 @@ public class AlumnoServiceImpl implements AlumnoService {
 	private AlumnoRepository repository;
 
 	@Override
-	public List<Alumno> listaAlumno() {
+	public List<Ciclo> listaAlumno() {
 		return repository.findAll();
 	}
 
 	@Override
-	public Alumno insertaActualizaAlumno(Alumno obj) {
+	public Ciclo insertaActualizaAlumno(Ciclo obj) {
 		return repository.save(obj);
 	}
 

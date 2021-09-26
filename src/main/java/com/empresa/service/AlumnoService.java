@@ -2,12 +2,12 @@ package com.empresa.service;
 
 import java.util.List;
 
-import com.empresa.entity.Alumno;
+import com.empresa.entity.Ciclo;
 
 public interface AlumnoService {
 
-	public abstract List<Alumno> listaAlumno();
+	public abstract List<Ciclo> listaAlumno();
 
-	public abstract Alumno insertaActualizaAlumno(Alumno obj);
+	public abstract Ciclo insertaActualizaAlumno(Ciclo obj);
 
 }

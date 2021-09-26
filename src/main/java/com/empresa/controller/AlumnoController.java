@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.empresa.entity.Alumno;
+import com.empresa.entity.Ciclo;
 import com.empresa.service.AlumnoService;
 import com.empresa.util.Constantes;
 
@@ -28,17 +28,17 @@ public class AlumnoController {
 
 	@GetMapping
 	@ResponseBody
-	public ResponseEntity<List<Alumno>> listaAlumno(){
-		List<Alumno> lista = alumnoService.listaAlumno();
+	public ResponseEntity<List<Ciclo>> listaAlumno(){
+		List<Ciclo> lista = alumnoService.listaAlumno();
 		return ResponseEntity.ok(lista);
 	}
 
 	@PostMapping
 	@ResponseBody
-	public  ResponseEntity<Map<String, Object>> insertaAlumno(@RequestBody Alumno obj){
+	public  ResponseEntity<Map<String, Object>> insertaAlumno(@RequestBody Ciclo obj){
 		Map<String, Object> salida = new HashMap<>();
 		try {
-			Alumno objSalida = alumnoService.insertaActualizaAlumno(obj);
+			Ciclo objSalida = alumnoService.insertaActualizaAlumno(obj);
 			if (objSalida == null) {
 				salida.put("mensaje", Constantes.MENSAJE_REG_ERROR);
 			}else {

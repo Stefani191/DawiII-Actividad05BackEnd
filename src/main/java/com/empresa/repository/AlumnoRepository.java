@@ -2,9 +2,9 @@ package com.empresa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.empresa.entity.Alumno;
+import com.empresa.entity.Ciclo;
 
-public interface AlumnoRepository extends JpaRepository<Alumno, Integer> {
+public interface AlumnoRepository extends JpaRepository<Ciclo, Integer> {
 
 }
 

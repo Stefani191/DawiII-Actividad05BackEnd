@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.empresa.entity.Deporte;
+import com.empresa.entity.Usuario;
 import com.empresa.repository.DeporteRepository;
 
 @Service
@@ -14,7 +14,7 @@ public class DeporteServiceImpl implements DeporteService{
 	private DeporteRepository repositorio;
 
 	@Override
-	public List<Deporte> listaDeporte() {
+	public List<Usuario> listaDeporte() {
 		return repositorio.findAll();
 	} 
 	
